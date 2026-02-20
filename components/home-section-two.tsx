@@ -5,9 +5,12 @@ import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import Image from "next/image";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
+import { ArrowLeft01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function HomeSectionTwo() {
+    const t = useTranslations("section_two");
+    const locale = useLocale();
     const [tab, setTab] = useState("nodejs");
     const [action, setAction] = useState("send-email");
 
@@ -20,18 +23,18 @@ export default function HomeSectionTwo() {
     };
 
     const languages = [
-        { id: "nodejs", label: "NodeJS" },
-        { id: "python", label: "Python" },
-        { id: "php", label: "PHP" },
-        { id: "go", label: "Go" },
-        { id: "rust", label: "Rust" },
-        { id: "java", label: "Java" },
+        { id: "nodejs", label: t("languages.nodejs") },
+        { id: "python", label: t("languages.python") },
+        { id: "php", label: t("languages.php") },
+        { id: "go", label: t("languages.go") },
+        { id: "rust", label: t("languages.rust") },
+        { id: "java", label: t("languages.java") },
     ];
 
     const actions = [
-        { id: "send-email", label: "Send Email", image: "/seed-1.png", alt: "Send Email" },
-        { id: "create-domain", label: "Create Domain", image: "/seed-2.png", alt: "Create Domain" },
-        { id: "create-api-key", label: "Create API Key", image: "/seed-3.png", alt: "Create API Key" },
+        { id: "send-email", label: t("actions.send_email"), image: "/seed-1.png", alt: t("actions.send_email") },
+        { id: "create-domain", label: t("actions.create_domain"), image: "/seed-2.png", alt: t("actions.create_domain") },
+        { id: "create-api-key", label: t("actions.create_api_key"), image: "/seed-3.png", alt: t("actions.create_api_key") },
     ];
 
     const codeMap: Record<string, Record<string, string>> = {
@@ -286,7 +289,7 @@ public class Main {
             </CardHeader>
             <CardContent>
                 <Card className="bg-background p-0 rounded-3xl max-w-5xl mx-auto ring-[#e9e9e9] flex flex-col lg:flex-row">
-                    <div className="flex flex-col items-start justify-start space-y-4 border-b lg:border-b-0 lg:border-r border-[#e9e9e9] p-3 w-full lg:w-5/12">
+                    <div className={`flex flex-col items-start justify-start space-y-4 border-b lg:border-b-0 ${locale === 'ar' ? "lg:border-l" : "lg:border-r"} border-[#e9e9e9] p-3 w-full lg:w-5/12`}>
                         <div className="flex flex-col items-start justify-start space-y-2 w-full">
                             {actions.map((item) => (
                                 <Button
@@ -309,8 +312,8 @@ public class Main {
                                         <p>{item.label}</p>
                                     </div>
                                     <div className="flex flex-row items-center gap-x-2 shrink-0">
-                                        <p className="text-muted-foreground">SDK Code</p>
-                                        <HugeiconsIcon icon={ArrowRight01Icon} strokeWidth={2} className="text-muted-foreground" />
+                                        <p className="text-muted-foreground">{t("sdk_code")}</p>
+                                        <HugeiconsIcon icon={locale === 'ar' ? ArrowLeft01Icon:  ArrowRight01Icon} strokeWidth={2} className="text-muted-foreground" />
                                     </div>
                                 </Button>
                             ))}
@@ -323,8 +326,8 @@ public class Main {
                             <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                         </div>
                         <div className="relative w-full overflow-x-hidden lg:h-120">
-                            <pre className="p-4 text-sm leading-relaxed w-full">
-                                <code className="font-mono text-foreground whitespace-pre">
+                            <pre className="p-4 text-sm leading-relaxed w-full text-left">
+                                <code className="font-mono text-foreground whitespace-pre" dir="ltr">
                                     {selectedCode}
                                 </code>
                             </pre>
@@ -335,17 +338,17 @@ public class Main {
             <CardFooter className="flex lg:flex-row flex-col items-center lg:justify-between justify-center space-y-3 lg:space-y-0 border-t-0 pt-0">
                 <span className="flex-col justify-start items-start space-y-2 lg:flex hidden">
                     <h3 className="text-2xl font-semibold">
-                        Developer-first SDK flows for Eleventeen
+                        {t("headline")}
                     </h3>
                     <p className="leading-tight text-muted-foreground">
-                        Pick a language and action to generate ready-to-use Eleventeen snippets for <br /> sending emails, creating domains, and provisioning API keys.
+                        {t("description")}
                     </p>
                 </span>
                 <span className="leading-tight text-muted-foreground text-center lg:hidden block">
-                    Pick a language and action to instantly generate Eleventeen snippets for sending emails, managing domains, and creating API keys.
+                    {t("mobile_description")}
                 </span>
-                <Button variant={'outline'} size={'lg'} className="rounded-full h-10 px-3">
-                    Signup Now
+                <Button variant={"outline"} size={"lg"} className="rounded-full h-10 px-3">
+                    {t("cta.signup_now")}
                 </Button>
             </CardFooter>
         </Card>

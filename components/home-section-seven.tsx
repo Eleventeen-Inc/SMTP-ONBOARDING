@@ -1,25 +1,28 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import { useTranslations } from "next-intl";
 
-const milestones = [
-    {
-        day: "Day 1",
-        title: "Connect your domain",
-        description: "Add DNS records and verify SPF, DKIM, and DMARC with guided checks.",
-    },
-    {
-        day: "Day 3",
-        title: "Integrate API and SMTP",
-        description: "Ship transactional flows fast with SDK snippets and environment keys.",
-    },
-    {
-        day: "Day 7",
-        title: "Go live with confidence",
-        description: "Enable webhooks, alerting, and replay tools for production stability.",
-    },
-];
+export default function HomeSectionSeven() {
+    const t = useTranslations("section_seven");
 
-export default function HomeSectionSeven() { 
+    const milestones = [
+        {
+            day: t("milestones.day_1.day"),
+            title: t("milestones.day_1.title"),
+            description: t("milestones.day_1.description"),
+        },
+        {
+            day: t("milestones.day_3.day"),
+            title: t("milestones.day_3.title"),
+            description: t("milestones.day_3.description"),
+        },
+        {
+            day: t("milestones.day_7.day"),
+            title: t("milestones.day_7.title"),
+            description: t("milestones.day_7.description"),
+        },
+    ];
+
     return (
         <div className="flex flex-col">
             <div className="w-full h-px bg-border" />
@@ -28,17 +31,17 @@ export default function HomeSectionSeven() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div className="space-y-5">
                             <p className="text-sm font-semibold text-muted-foreground">
-                                Implementation journey
+                                {t("eyebrow")}
                             </p>
                             <h2 className="text-4xl lg:text-5xl font-normal leading-tight lg:text-balance">
-                                From zero setup to production-ready email in one sprint
+                                {t("headline")}
                             </h2>
                             <p className="text-muted-foreground leading-tight max-w-xl">
-                                This workflow helps developer teams launch quickly without sacrificing observability, security, or deliverability.
+                                {t("description")}
                             </p>
                             <div className="flex gap-3 pt-1">
                                 <Button variant="outline" className="rounded-full h-12 px-6 bg-background">
-                                    Book onboarding
+                                    {t("cta.book_onboarding")}
                                 </Button>
                             </div>
                         </div>

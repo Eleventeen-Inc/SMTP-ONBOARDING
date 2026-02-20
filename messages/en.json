@@ -1,0 +1,200 @@
+{
+  "header": {
+    "nav": {
+      "getting_started": "Getting started",
+      "product": "Product",
+      "docs": "Docs"
+    },
+    "getting_started_menu": {
+      "quickstart": {
+        "title": "Quickstart",
+        "description": "Send your first email in under 5 minutes."
+      },
+      "api_keys": {
+        "title": "API Keys",
+        "description": "Create and manage secure API keys."
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Set up and verify your sending domain."
+      }
+    },
+    "product_menu": {
+      "email_api": {
+        "title": "Email API",
+        "description": "Send transactional emails with simple API calls."
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "description": "Receive delivery, bounce, and complaint events."
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Verify your sending domains and DNS records."
+      }
+    },
+    "cta": {
+      "login": "Login",
+      "get_started": "Get Started"
+    }
+  },
+  "mobile_menu": {
+    "custom_domain": {
+      "title": "Custom Domain",
+      "description": "Set up and verify your sending domain."
+    }
+  },
+  "section_one": {
+    "headline": "Build, send, and manage emails with confidence.",
+    "description": "Powerful APIs, modern SDKs, and real-time insights designed to integrate seamlessly into your workflow and scale effortlessly as your product grows, giving you the reliability, performance, and control needed to build, automate, and deliver emails with confidence at any stage of your application's journey.",
+    "cta": {
+      "signup": "Signup",
+      "contact_sales": "Contact Sales"
+    }
+  },
+  "section_two": {
+    "languages": {
+      "nodejs": "NodeJS",
+      "python": "Python",
+      "php": "PHP",
+      "go": "Go",
+      "rust": "Rust",
+      "java": "Java"
+    },
+    "actions": {
+      "send_email": "Send Email",
+      "create_domain": "Create Domain",
+      "create_api_key": "Create API Key"
+    },
+    "sdk_code": "SDK Code",
+    "headline": "Developer-first SDK flows for Eleventeen",
+    "description": "Pick a language and action to generate ready-to-use Eleventeen snippets for sending emails, creating domains, and provisioning API keys.",
+    "mobile_description": "Pick a language and action to instantly generate Eleventeen snippets for sending emails, managing domains, and creating API keys.",
+    "cta": {
+      "signup_now": "Signup Now"
+    }
+  },
+  "section_four": {
+    "headline": "Trusted by leading developers and enterprises"
+  },
+  "section_five": {
+    "eyebrow": "Built for engineering teams",
+    "headline": "A comprehensive dashboard for modern email delivery",
+    "description": "Build, test, and monitor transactional email from one place. Our app is designed for developers with clear logs, delivery insights, environment-based configuration, and an API-first workflow that ships faster.",
+    "cta": {
+      "explore_platform": "Explore the platform"
+    },
+    "cards": {
+      "visibility_title": "Real-time campaign and delivery visibility",
+      "visibility_description": "Track sends, bounces, opens, and failures in a single dashboard so your team can debug faster and keep communication reliable.",
+      "compose_title": "Familiar compose UI for faster testing",
+      "compose_description": "Preview and send emails in a common compose experience with from, to, and subject fields. Developers can validate formatting, content, and sending behavior before going live."
+    },
+    "mock_email": {
+      "title": "New Message",
+      "from": "From",
+      "to": "To",
+      "subject": "Subject",
+      "subject_value": "Your onboarding is complete",
+      "body": "Hi Mohammed,\nWelcome aboard. Your SMTP domain is verified and your first test email was delivered successfully.",
+      "footer": "Connected via SMTP + API fallback",
+      "send": "Send"
+    }
+  },
+  "section_six": {
+    "eyebrow": "Launch with confidence",
+    "headline": "Ready to ship reliable email infrastructure for your product?",
+    "description": "Set up domains, generate API keys, monitor delivery events, and scale from first send to millions of messages with a workflow that feels native to developers.",
+    "stats": {
+      "delivery_uptime": "Delivery uptime",
+      "api_response": "API response",
+      "event_tracking": "Event tracking"
+    },
+    "checklist": {
+      "title": "Production Readiness Checklist",
+      "complete": "6/6 complete",
+      "items": [
+        "Domain and DNS records verified",
+        "SPF, DKIM, and DMARC configured",
+        "API key scoped per environment",
+        "Webhook endpoint receiving events",
+        "Rate limits and retries validated",
+        "Monitoring alerts enabled"
+      ]
+    },
+    "latest_api_request": {
+      "label": "Latest API request",
+      "payload": "POST /v1/emails/send\nfrom: alerts@acme.dev\nto: user@product.com\nstatus: 202 accepted"
+    }
+  },
+  "section_seven": {
+    "eyebrow": "Implementation journey",
+    "headline": "From zero setup to production-ready email in one sprint",
+    "description": "This workflow helps developer teams launch quickly without sacrificing observability, security, or deliverability.",
+    "cta": {
+      "book_onboarding": "Book onboarding"
+    },
+    "milestones": {
+      "day_1": {
+        "day": "Day 1",
+        "title": "Connect your domain",
+        "description": "Add DNS records and verify SPF, DKIM, and DMARC with guided checks."
+      },
+      "day_3": {
+        "day": "Day 3",
+        "title": "Integrate API and SMTP",
+        "description": "Ship transactional flows fast with SDK snippets and environment keys."
+      },
+      "day_7": {
+        "day": "Day 7",
+        "title": "Go live with confidence",
+        "description": "Enable webhooks, alerting, and replay tools for production stability."
+      }
+    }
+  },
+  "section_eight": {
+    "headline": "Start sending production email today",
+    "description": "Build faster with developer-first APIs, real-time delivery insights, and infrastructure you can rely on.",
+    "cta": {
+      "get_started": "Get started",
+      "talk_to_sales": "Talk to sales"
+    }
+  },
+  "footer": {
+    "brand": "Eleventeen",
+    "description": "Developer-first email platform for sending, monitoring, and scaling transactional communication.",
+    "language": {
+      "placeholder": "Language",
+      "label": "Select Language",
+      "english": "English",
+      "arabic": "Arabic"
+    },
+    "columns": {
+      "product": "Product",
+      "resources": "Resources",
+      "company": "Company",
+      "social": "Social"
+    },
+    "links": {
+      "api": "API",
+      "smtp_relay": "SMTP Relay",
+      "dashboard": "Dashboard",
+      "webhooks": "Webhooks",
+      "documentation": "Documentation",
+      "status": "Status",
+      "guides": "Guides",
+      "changelog": "Changelog",
+      "about": "About",
+      "security": "Security",
+      "privacy": "Privacy",
+      "contact": "Contact",
+      "discord": "Discord",
+      "x": "X",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "facebook": "Facebook"
+    },
+    "copyright": "(c) {year} Eleventeen. All rights reserved.",
+    "tagline": "Built for developers, designed for reliable delivery."
+  }
+}

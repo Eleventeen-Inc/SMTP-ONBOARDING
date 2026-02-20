@@ -14,23 +14,26 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowUpRight01Icon } from "@hugeicons/core-free-icons";
 import ListItem from "./list-item";
 import HomeHeaderMenuBar from "./home-header-menu-bar";
+import { useTranslations } from "next-intl";
 
 export default function HomeHeader() {
+    const t = useTranslations('header');
+    
     const components: { title: string; href: string; description: string }[] = [
         {
-            title: "Email API",
+            title: t('product_menu.email_api.title'),
             href: "https://doc.eleventeen.net/email-api",
-            description: "Send transactional emails with simple API calls.",
+            description: t('product_menu.email_api.description'),
         },
         {
-            title: "Webhooks",
+            title: t('product_menu.webhooks.title'),
             href: "https://doc.eleventeen.net/webhooks",
-            description: "Receive delivery, bounce, and complaint events.",
+            description: t('product_menu.webhooks.description'),
         },
         {
-            title: "Domains",
+            title: t('product_menu.domains.title'),
             href: "https://doc.eleventeen.net/domains",
-            description: "Verify your sending domains and DNS records.",
+            description: t('product_menu.domains.description'),
         },
     ];
 
@@ -57,24 +60,24 @@ export default function HomeHeader() {
                     <NavigationMenuList className="gap-x-4">
                         <NavigationMenuItem>
                             <NavigationMenuTrigger className="rounded-full bg-sidebar hover:bg-[#e7e5e2] focus:bg-[#e7e5e2] data-[state=open]:bg-[#e7e5e2] data-[state=open]:hover:bg-[#e7e5e2]">
-                                Getting started
+                                {t('nav.getting_started')}
                             </NavigationMenuTrigger>
                             <NavigationMenuContent className="p-6">
                                 <ul className="w-96">
-                                    <ListItem href="https://doc.eleventeen.net/quickstart" title="Quickstart">
-                                        Send your first email in under 5 minutes.
+                                    <ListItem href="https://doc.eleventeen.net/quickstart" title={t('getting_started_menu.quickstart.title')}>
+                                        {t('getting_started_menu.quickstart.description')}
                                     </ListItem>
-                                    <ListItem href="https://doc.eleventeen.net/api-keys" title="API Keys">
-                                        Create and manage secure API keys.
+                                    <ListItem href="https://doc.eleventeen.net/api-keys" title={t('getting_started_menu.api_keys.title')}>
+                                        {t('getting_started_menu.api_keys.description')}
                                     </ListItem>
-                                    <ListItem href="https://doc.eleventeen.net/domains" title="Domains">
-                                        Set up and verify your sending domain.
+                                    <ListItem href="https://doc.eleventeen.net/domains" title={t('getting_started_menu.domains.title')}>
+                                        {t('getting_started_menu.domains.description')}
                                     </ListItem>
                                 </ul>
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem className="hidden md:flex">
-                            <NavigationMenuTrigger className="rounded-full bg-sidebar hover:bg-[#e7e5e2] focus:bg-[#e7e5e2] data-[state=open]:bg-[#e7e5e2] data-[state=open]:hover:bg-[#e7e5e2]">Product</NavigationMenuTrigger>
+                            <NavigationMenuTrigger className="rounded-full bg-sidebar hover:bg-[#e7e5e2] focus:bg-[#e7e5e2] data-[state=open]:bg-[#e7e5e2] data-[state=open]:hover:bg-[#e7e5e2]">{t('nav.product')}</NavigationMenuTrigger>
                             <NavigationMenuContent className="p-6">
                                 <ul className="grid w-100 gap-2 md:w-125 md:grid-cols-2 lg:w-150">
                                     {components.map((component) => (
@@ -90,8 +93,8 @@ export default function HomeHeader() {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuLink asChild className="rounded-full font-semibold bg-sidebar hover:bg-[#e7e5e2] focus:bg-[#e7e5e2] data-[state=open]:bg-[#e7e5e2] data-[state=open]:hover:bg-[#e7e5e2]">
-                                <Link href="https://doc.eleventeen.net">Docs</Link>
+                            <NavigationMenuLink asChild className="rounded-full bg-sidebar font-medium hover:bg-[#e7e5e2] focus:bg-[#e7e5e2] data-[state=open]:bg-[#e7e5e2] data-[state=open]:hover:bg-[#e7e5e2]">
+                                <Link href="https://doc.eleventeen.net">{t('nav.docs')}</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>
@@ -99,10 +102,10 @@ export default function HomeHeader() {
             </div>
             <div className="flex flex-row items-center gap-x-3">
                 <Button variant={'outline'} className="h-10 rounded-full px-3">
-                    Login
+                    {t('cta.login')}
                 </Button>
                 <Button className="h-10 rounded-full px-3 lg:flex hidden">
-                    Get Started
+                    {t('cta.get_started')}
                     <HugeiconsIcon icon={ArrowUpRight01Icon} strokeWidth={2} />
                 </Button>
                 <HomeHeaderMenuBar />

@@ -1,0 +1,200 @@
+{
+  "header": {
+    "nav": {
+      "getting_started": "البدء",
+      "product": "المنتج",
+      "docs": "الوثائق"
+    },
+    "getting_started_menu": {
+      "quickstart": {
+        "title": "البدء السريع",
+        "description": "أرسل أول بريد إلكتروني خلال أقل من 5 دقائق."
+      },
+      "api_keys": {
+        "title": "مفاتيح API",
+        "description": "أنشئ وأدر مفاتيح API آمنة."
+      },
+      "domains": {
+        "title": "النطاقات",
+        "description": "أعد إعداد نطاق الإرسال الخاص بك وتحقق منه."
+      }
+    },
+    "product_menu": {
+      "email_api": {
+        "title": "Email API",
+        "description": "أرسل رسائل بريدية معاملاتية عبر استدعاءات API بسيطة."
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "description": "استقبل أحداث التسليم والارتداد والشكاوى."
+      },
+      "domains": {
+        "title": "النطاقات",
+        "description": "تحقق من نطاقات الإرسال وسجلات DNS الخاصة بك."
+      }
+    },
+    "cta": {
+      "login": "تسجيل الدخول",
+      "get_started": "ابدأ الآن"
+    }
+  },
+  "mobile_menu": {
+    "custom_domain": {
+      "title": "نطاق مخصص",
+      "description": "أعد إعداد نطاق الإرسال الخاص بك وتحقق منه."
+    }
+  },
+  "section_one": {
+    "headline": "ابنِ وأرسل وأدر رسائل \n البريد بثقة.",
+    "description": "واجهات API قوية، وحِزم SDK حديثة، ورؤى لحظية مصممة للاندماج بسلاسة في سير عملك والتوسع بسهولة مع نمو منتجك، لتمنحك الاعتمادية والأداء والتحكم اللازمين لبناء البريد وأتمتته وإرساله بثقة في كل مرحلة من رحلة تطبيقك.",
+    "cta": {
+      "signup": "إنشاء حساب",
+      "contact_sales": "تواصل مع المبيعات"
+    }
+  },
+  "section_two": {
+    "languages": {
+      "nodejs": "NodeJS",
+      "python": "Python",
+      "php": "PHP",
+      "go": "Go",
+      "rust": "Rust",
+      "java": "Java"
+    },
+    "actions": {
+      "send_email": "إرسال بريد",
+      "create_domain": "إنشاء نطاق",
+      "create_api_key": "إنشاء مفتاح API"
+    },
+    "sdk_code": "كود SDK",
+    "headline": "تدفقات SDK موجهة للمطورين في Eleventeen",
+    "description": "اختر لغة وإجراءً لتوليد مقاطع Eleventeen جاهزة للاستخدام لإرسال البريد وإنشاء النطاقات وتوفير مفاتيح API.",
+    "mobile_description": "اختر لغة وإجراءً لتوليد مقاطع Eleventeen فورًا لإرسال البريد وإدارة النطاقات وإنشاء مفاتيح API.",
+    "cta": {
+      "signup_now": "سجّل الآن"
+    }
+  },
+  "section_four": {
+    "headline": "موثوق من قبل مطورين وشركات رائدة"
+  },
+  "section_five": {
+    "eyebrow": "مبني لفرق الهندسة",
+    "headline": "لوحة تحكم شاملة لتسليم \n البريد الحديث",
+    "description": "ابنِ واختبر وراقب البريد المعاملاتي من مكان واحد. تطبيقنا مصمم للمطورين بسجلات واضحة ورؤى تسليم وإعدادات حسب البيئة وسير عمل API-first يسرّع الإطلاق.",
+    "cta": {
+      "explore_platform": "استكشف المنصة"
+    },
+    "cards": {
+      "visibility_title": "رؤية لحظية للحملات والتسليم",
+      "visibility_description": "تتبع الإرسال والارتداد والفتح والإخفاقات في لوحة واحدة ليتمكن فريقك من التصحيح أسرع والحفاظ على موثوقية التواصل.",
+      "compose_title": "واجهة كتابة مألوفة لاختبار أسرع",
+      "compose_description": "عاين الرسائل وأرسلها في تجربة كتابة معتادة مع حقول المرسل والمستقبل والموضوع. يمكن للمطورين التحقق من التنسيق والمحتوى وسلوك الإرسال قبل الإطلاق."
+    },
+    "mock_email": {
+      "title": "رسالة جديدة",
+      "from": "من",
+      "to": "إلى",
+      "subject": "الموضوع",
+      "subject_value": "اكتمل إعدادك الأولي",
+      "body": "مرحبًا Mohammed،\nأهلًا بك. تم التحقق من نطاق SMTP الخاص بك وتم تسليم أول رسالة اختبار بنجاح.",
+      "footer": "متصل عبر SMTP مع بديل API",
+      "send": "إرسال"
+    }
+  },
+  "section_six": {
+    "eyebrow": "انطلق بثقة",
+    "headline": "جاهز لإطلاق بنية بريد موثوقة لمنتجك؟",
+    "description": "أعد إعداد النطاقات، وأنشئ مفاتيح API، وراقب أحداث التسليم، وتوسع من أول رسالة إلى ملايين الرسائل عبر سير عمل يشعر المطور بأنه طبيعي.",
+    "stats": {
+      "delivery_uptime": "جاهزية التسليم",
+      "api_response": "زمن استجابة API",
+      "event_tracking": "تتبع الأحداث"
+    },
+    "checklist": {
+      "title": "قائمة جاهزية الإنتاج",
+      "complete": "6/6 مكتملة",
+      "items": [
+        "تم التحقق من النطاق وسجلات DNS",
+        "تم إعداد SPF وDKIM وDMARC",
+        "تم تخصيص مفتاح API لكل بيئة",
+        "نقطة Webhook تستقبل الأحداث",
+        "تم التحقق من حدود المعدل وإعادة المحاولة",
+        "تم تفعيل تنبيهات المراقبة"
+      ]
+    },
+    "latest_api_request": {
+      "label": "أحدث طلب API",
+      "payload": "POST /v1/emails/send\nfrom: alerts@acme.dev\nto: user@product.com\nstatus: 202 accepted"
+    }
+  },
+  "section_seven": {
+    "eyebrow": "رحلة التنفيذ",
+    "headline": "من إعداد صفري إلى بريد جاهز للإنتاج خلال خطوات بسيطة",
+    "description": "يساعد هذا المسار فرق المطورين على الإطلاق بسرعة دون التضحية بالمراقبة أو الأمان أو قابلية التسليم.",
+    "cta": {
+      "book_onboarding": "احجز جلسة الإعداد"
+    },
+    "milestones": {
+      "day_1": {
+        "day": "اليوم 1",
+        "title": "اربط نطاقك",
+        "description": "أضف سجلات DNS وتحقق من SPF وDKIM وDMARC عبر فحوصات موجهة."
+      },
+      "day_3": {
+        "day": "اليوم 3",
+        "title": "ادمج API وSMTP",
+        "description": "أطلق التدفقات المعاملاتية بسرعة عبر مقاطع SDK ومفاتيح البيئات."
+      },
+      "day_7": {
+        "day": "اليوم 7",
+        "title": "انطلق للإنتاج بثقة",
+        "description": "فعّل Webhooks والتنبيهات وأدوات إعادة التشغيل لاستقرار الإنتاج."
+      }
+    }
+  },
+  "section_eight": {
+    "headline": "إبدأ بدمج نظامك مع خدمة البريد بأقل مجهود",
+    "description": "ابنِ بشكل أسرع عبر واجهات API موجهة للمطورين، ورؤى تسليم لحظية، وبنية تحتية يمكنك الاعتماد عليها.",
+    "cta": {
+      "get_started": "ابدأ الآن",
+      "talk_to_sales": "تحدث مع المبيعات"
+    }
+  },
+  "footer": {
+    "brand": "Eleventeen",
+    "description": "منصة بريد موجهة للمطورين لإرسال الاتصالات المعاملاتية ومراقبتها وتوسيعها.",
+    "language": {
+      "placeholder": "اللغة",
+      "label": "اختر اللغة",
+      "english": "الإنجليزية",
+      "arabic": "العربية"
+    },
+    "columns": {
+      "product": "المنتج",
+      "resources": "الموارد",
+      "company": "الشركة",
+      "social": "الشبكات الاجتماعية"
+    },
+    "links": {
+      "api": "API",
+      "smtp_relay": "ترحيل SMTP",
+      "dashboard": "لوحة التحكم",
+      "webhooks": "Webhooks",
+      "documentation": "الوثائق",
+      "status": "الحالة",
+      "guides": "الأدلة",
+      "changelog": "سجل التغييرات",
+      "about": "من نحن",
+      "security": "الأمان",
+      "privacy": "الخصوصية",
+      "contact": "تواصل",
+      "discord": "Discord",
+      "x": "X",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "facebook": "Facebook"
+    },
+    "copyright": "(c) {year} Eleventeen. جميع الحقوق محفوظة.",
+    "tagline": "بني للمطورين ومصمم لتسليم موثوق."
+  }
+}

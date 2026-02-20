@@ -3,8 +3,11 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import { useTranslations } from "next-intl";
 
 export default function HomeSectionFive() {
+    const t = useTranslations("section_five");
+
     return (
         <div className="flex flex-col">
             <div className="relative w-full lg:max-w-7xl lg:mx-auto">
@@ -15,21 +18,21 @@ export default function HomeSectionFive() {
                 <div className="w-full lg:max-w-7xl place-content-center gap-x-6 lg:mx-auto lg:px-10 px-4 border-x border-border grid grid-cols-1 lg:grid-cols-2 space-y-8 pt-28 lg:pt-32 p-8">
                     <span className="flex flex-col space-y-5 leading-tight justify-start items-start">
                         <p className="text-muted-foreground font-semibold">
-                            Built for engineering teams
+                            {t("eyebrow")}
                         </p>
-                        <h1 className="text-4xl font-normal lg:tracking-tight lg:text-balance">
-                            A comprehensive dashboard <br /> for modern email delivery
+                        <h1 className="text-4xl whitespace-pre-line font-normal lg:tracking-tight lg:text-balance">
+                            {t("headline")}
                         </h1>
                         <Button className="rounded-full h-14 text-lg px-5">
-                            Explore the platform
+                            {t("cta.explore_platform")}
                         </Button>
                     </span>
                     <span>
-                        Build, test, and monitor transactional email from one place. Our app is designed for developers with clear logs, delivery insights, environment-based configuration, and an API-first workflow that ships faster.
+                        {t("description")}
                     </span>
                     <div className="relative overflow-hidden h-full bg-[url('/abstract-gradient-background-with-grainy-effect_84443-3104.jpg')] bg-cover bg-center rounded-3xl">
                         <Image
-                            src={'/section-five.png'}
+                            src={"/section-five.png"}
                             alt="Section Five"
                             width={1000}
                             height={1000}
@@ -37,53 +40,51 @@ export default function HomeSectionFive() {
                         />
                         <span className="flex flex-col relative z-10 space-y-2 leading-tight justify-start items-start p-4">
                             <p className="font-semibold text-muted">
-                                Real-time campaign and delivery visibility
+                                {t("cards.visibility_title")}
                             </p>
                             <span className="text-background leading-tight">
-                                Track sends, bounces, opens, and failures in a single dashboard so your team can debug faster and keep communication reliable.
+                                {t("cards.visibility_description")}
                             </span>
                         </span>
                     </div>
                     <Card className="relative mt-8 lg:mt-0 bg-[#F5F3F1] rounded-3xl p-6 ring-border">
                         <Card className="h-80 rounded-2xl ring-border/50 shadow-sm my-auto py-0">
                             <div className="h-full rounded-2xl bg-white p-4 flex flex-col">
-                                <div className="mb-3 text-sm font-semibold text-slate-700">New Message</div>
+                                <div className="mb-3 text-sm font-semibold text-slate-700">{t("mock_email.title")}</div>
                                 <div className="space-y-2 text-sm">
                                     <div className="flex items-center gap-3 border-b border-slate-200 pb-2">
-                                        <span className="w-14 text-slate-500">From</span>
+                                        <span className="w-14 text-slate-500">{t("mock_email.from")}</span>
                                         <span className="text-slate-800">alerts@acme.dev</span>
                                     </div>
                                     <div className="flex items-center gap-3 border-b border-slate-200 pb-2">
-                                        <span className="w-14 text-slate-500">To</span>
+                                        <span className="w-14 text-slate-500">{t("mock_email.to")}</span>
                                         <span className="text-slate-800">mohd@company.com</span>
                                     </div>
                                     <div className="flex items-center gap-3 border-b border-slate-200 pb-2">
-                                        <span className="w-14 text-slate-500">Subject</span>
-                                        <span className="text-slate-800">Your onboarding is complete</span>
+                                        <span className="w-14 text-slate-500">{t("mock_email.subject")}</span>
+                                        <span className="text-slate-800">{t("mock_email.subject_value")}</span>
                                     </div>
                                 </div>
-                                <div className="mt-3 grow text-sm text-slate-600">
-                                    Hi Mohammed,
-                                    <br />
-                                    Welcome aboard. Your SMTP domain is verified and your first test email was delivered successfully.
+                                <div className="mt-3 grow text-sm text-slate-600 whitespace-pre-line">
+                                    {t("mock_email.body")}
                                 </div>
                                 <div className="mt-3 flex items-center justify-between">
-                                    <span className="text-xs text-slate-500">Connected via SMTP + API fallback</span>
-                                    <Button className="h-8 rounded-full px-4 text-xs">Send</Button>
+                                    <span className="text-xs text-slate-500">{t("mock_email.footer")}</span>
+                                    <Button className="h-8 rounded-full px-4 text-xs">{t("mock_email.send")}</Button>
                                 </div>
                             </div>
                         </Card>
                         <span className="flex flex-col relative z-10 space-y-2 leading-tight justify-start items-start p-4">
                             <p className="font-semibold">
-                                Familiar compose UI for faster testing
+                                {t("cards.compose_title")}
                             </p>
                             <span className="leading-tight">
-                                Preview and send emails in a common compose experience with from, to, and subject fields. Developers can validate formatting, content, and sending behavior before going live.
+                                {t("cards.compose_description")}
                             </span>
                         </span>
                     </Card>
                 </div>
             </div>
         </div>
-    )
+    );
 }

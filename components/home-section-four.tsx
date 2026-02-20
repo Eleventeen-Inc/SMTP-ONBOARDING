@@ -1,11 +1,15 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function HomeSectionFour() {
+    const t = useTranslations("section_four");
+
     return (
         <div className="flex flex-col mt-24">
             <div className="w-full max-w-7xl mx-auto justify-start items-start lg:px-10 px-4 mb-8">
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                    Trusted by leading developers and enterprises
+                    {t("headline")}
                 </h4>
             </div>
             <div className="w-full h-px bg-border" />

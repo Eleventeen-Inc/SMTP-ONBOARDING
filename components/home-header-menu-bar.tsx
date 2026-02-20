@@ -5,39 +5,43 @@ import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { EqualSignIcon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HomeHeaderMenuBar() {
+    const tHeader = useTranslations("header");
+    const tMobile = useTranslations("mobile_menu");
+
     const components: { title: string; href: string; description: string }[] = [
         {
-            title: "Email API",
+            title: tHeader("product_menu.email_api.title"),
             href: "https://doc.eleventeen.net/email-api",
-            description: "Send transactional emails with simple API calls.",
+            description: tHeader("product_menu.email_api.description"),
         },
         {
-            title: "Webhooks",
+            title: tHeader("product_menu.webhooks.title"),
             href: "https://doc.eleventeen.net/webhooks",
-            description: "Receive delivery, bounce, and complaint events.",
+            description: tHeader("product_menu.webhooks.description"),
         },
         {
-            title: "Domains",
+            title: tHeader("product_menu.domains.title"),
             href: "https://doc.eleventeen.net/domains",
-            description: "Verify your sending domains and DNS records.",
+            description: tHeader("product_menu.domains.description"),
         },
 
         {
-            title: "Quickstart",
+            title: tHeader("getting_started_menu.quickstart.title"),
             href: "https://doc.eleventeen.net/quickstart",
-            description: "Send your first email in under 5 minutes.",
+            description: tHeader("getting_started_menu.quickstart.description"),
         },
         {
-            title: "API Keys",
+            title: tHeader("getting_started_menu.api_keys.title"),
             href: "https://doc.eleventeen.net/api-keys",
-            description: "Create and manage secure API keys.",
+            description: tHeader("getting_started_menu.api_keys.description"),
         },
         {
-            title: "Custom Domain",
+            title: tMobile("custom_domain.title"),
             href: "https://doc.eleventeen.net/domains",
-            description: "Set up and verify your sending domain.",
+            description: tMobile("custom_domain.description"),
         },
     ];
 
